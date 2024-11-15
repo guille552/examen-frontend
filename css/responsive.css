@@ -1,0 +1,85 @@
+@media (max-width: 415px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    #icon-menu {
+        display: block;
+        color: brown;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        align-items: center;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        top: 60px;
+        left: 0;
+        width: 200px;
+        padding: 1rem;
+        background-color: #ff4048;
+    }
+    #ul-menu a{
+        width: 90%;
+        border-bottom: 2px white dotted;
+
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav.active {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: flex;
+    }
+}
+
+/* parallaxs */
+.fotoparallaxs {
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+/* wow.js */
+
+.service-items {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    max-width: 300px;
+    margin: 0.5rem;
+    padding: 2rem;
+}
+
+/* galeria */
+
+.gallery-info {
+    flex-direction: column-reverse;
+    padding: 1rem;
+}
+
+.gallery {
+    width: 100%;
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 5px;
+}
+
+.info-gallery {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+}

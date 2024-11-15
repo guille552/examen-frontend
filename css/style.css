@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    /* nav */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 40px;
+}
+
+#icon-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff4048;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff4048;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .rslides li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    }
+/* Contenedor principal del carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Carrusel de imágenes */
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+
+
+.content-info {
+    position: absolute;
+    top: 30%; 
+    left: 5%; 
+    color: white;
+    max-width: 400px;
+    padding: 20px;
+    z-index: 10;
+}
+
+.content-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+    /* parallax */
+    .fotoparallaxs {
+        color: white;
+        background-image: url("/imagenes/foto_parallaxs.jpeg"); /* Asegúrate de que esta ruta sea correcta */
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .info_degradado {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 300px;
+    }
+    
+    .subtitulo {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .info_degradado h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* wow.js */
+
+    .services {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    .services h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #333;
+    }
+    
+    .service-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+    }
+    
+    .icon-container img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+    
+    .service-item h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0.5rem 0;
+        color: #333;
+    }
+    
+    .service-item p {
+        font-size: 1rem;
+        color: #666;
+        margin: 0;
+    }
+    
+    .service-item + .service-item {
+        border-top: 1px solid #ddd;
+        padding-top: 1rem;
+    }
+
+    .gallery-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        width: 50%;
+    
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    /* testimonios */
+
+/* Estilos Generales */
+.contenedor-principal {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f6fb;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0.5rem auto 2rem;
+    border: none;
+}
+
+.contenedor-principal {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f6fb;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0.5rem auto 2rem;
+    border: none;
+}
+
+/* Estilos de la Sección de Testimonios */
+.contenedor-secundario {
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.imgentest {
+    position: relative;
+    display: inline-block;
+}
+
+.imgentest img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.icono-encima {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-text p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
+}
+
+/* Nombre y posición */
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.position {
+    font-size: 0.9rem;
+    color: #3574E0;
+    margin-top: 0.2rem;
+}
+
+/* Botones de Navegación */
+.slide-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.arrow {
+    color: #fff;
+    background-color: #3574E0;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow:hover {
+    background-color: #0056b3;
+}
+
+/* acordeon */
+
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.acordeon_titulo{
+    color: white;
+    background-color: #0056b3;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+    color: #0056b3;
+}
+
+.acordeon_contenido2{
+    padding: 20px;
+    display: none;
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    background-color: #0A1635; /* Fondo oscuro */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* Estilo del logo */
+.logo-footer {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos del botón fijo */
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #3574E0; /* Color de fondo */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: background-color 0.3s ease;
+}
+
+.fixed-button:hover {
+    background-color: #0056b3; /* Color al pasar el cursor */
+}

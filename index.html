@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src='https://kit.fontawesome.com/138f20aa8b.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <script src="js/wow.min.js"></script>
+    <script src="js/responsiveslides.js"></script>
+    <script src="js/fancybox.js"></script>
+
+
+</head>
+<body>
+    <header class="1">
+        <img src="imagenes/logoheader.png" alt="">
+    </header>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">webX</h1>
+            <i id="icon-menu" class="fas fa-bars menu-icon"></i>
+        </div>
+
+        <nav id="ul-menu" class="menu">
+            <a href="#home" class="nav-link close-a">Home</a>
+            <a href="#services" class="nav-link close-a">Services</a>
+            <a href="#gallery" class="nav-link close-a">Gallery</a>
+            <a href="#coaches" class="nav-link close-a">Coaches</a>
+        </nav>
+    </header>
+    <!-- responsiveslide -->
+    <div class="carousel-container">
+        <ul class="rslides">
+            <li><img src="imagenes/slide1.jpg" alt=""></li>
+            <li><img src="imagenes/slide2.jpg" alt=""></li>
+            <li><img src="imagenes/slide3.jpg" alt=""></li>
+        </ul>
+        <div class="content-info">
+            <h2>Analyze and Find The Perfect IT Solution</h2>
+            <p>Ensuring the best return on investment for your bespoke SEO campaign requirements. Awesome IT solution services.</p>
+        </div>
+    </div>
+    
+
+<!-- parallax -->
+
+<article class="fotoparallaxs">
+    <div class="info_degradado">
+        <p class="subtitulo">// We Carry More Than Just Good Coding Skills</p>
+        <h2>Let's Build Your Website!</h2>
+        <a href="#" class="btn">Contact Us</a>
+    </div>
+</article>
+
+<!-- wow.js -->
+<section id="services" class="services">
+    <h2>Services</h2>
+    <div class="service-items">
+        <article class="wow animate__animated animate__fadeInDown service-item">
+            <div class="icon-container">
+                <img src="imagenes/icono1.png" alt="">
+            </div>
+            <h3>Quality Service</h3>
+            <p>Our fitness team is ready to assist and make your experience memorable.</p>
+        </article>
+        
+        <article class="wow animate__animated animate__fadeInDown service-item">
+            <div class="icon-container">
+                <img src="imagenes/icono2.png" alt="">
+            </div>
+            <h3>Spacious Gym</h3>
+            <p>Our gym has ample space for all your workouts and a variety of equipment.</p>
+        </article>
+        
+        <article class="wow animate__animated animate__fadeInUp service-item">
+            <div class="icon-container">
+                <img src="imagenes/icono3.png" alt="">
+            </div>
+            <h3>Unique Fitness Programs</h3>
+            <p>Our coaches have designed personalized programs that work for you.</p>
+        </article>
+        
+        <article class="wow animate__animated animate__fadeInUp service-item">
+            <div class="icon-container">
+                <img src="imagenes/icono4.png" alt="">
+            </div>
+            <h3>Group Classes</h3>
+            <p>If group training suits you, join our great classes.</p>
+        </article>
+    </div>
+</section>
+    
+<!-- galeria imagenes -->
+
+<section id="gallery" class="gallery-info">
+    <div class="gallery">
+      <a href="imagenes/team1.jpeg" data-fancybox="gallery" data-caption="Fotografía 1">
+        <figure class="fotos">
+          <img src="imagenes/team1.jpeg" alt="" />
+        </figure>
+      </a>
+
+      <a href="imagenes/team2.jpeg" data-fancybox="gallery" data-caption="Fotografía 2">
+        <figure class="fotos">
+          <img src="imagenes/team2.jpeg" alt="" />
+        </figure>
+      </a>
+
+      <a href="imagenes/team3.jpeg" data-fancybox="gallery" data-caption="Fotografía 3">
+        <figure class="fotos">
+          <img src="imagenes/team3.jpeg" alt="" />
+        </figure>
+      </a>
+    </div>
+</section>
+
+<!-- carousel de testimonios -->
+
+<section class="contenedor-principal ancho ancho2" id="carousel">
+    <h1>TESTIMONIALES</h1>
+    <hr class="underline">
+
+    <div class="contenedor-secundario" id="slide-container">
+        <!-- Primer artículo del carrusel -->
+        <article class="slide" data-slideIndex="0">
+            <figure class="imgentest">
+                <img src="imagenes/testi1.jpeg" alt="Foto de John Smith">
+                <i class="fa-solid fa-quote-left icono-encima"></i>
+            </figure>
+            <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <h3>John Smith</h3>
+            <p class="position" style="color: #3574E0;">IT Manager</p>
+        </article>
+        
+        <!-- Segundo artículo del carrusel -->
+        <article class="slide" data-slideIndex="1">
+            <figure class="imgentest">
+                <img src="imagenes/testi2.jpg" alt="Foto de Bread Mc">
+                <i class="fa-solid fa-quote-left icono-encima"></i>
+            </figure>
+            <div class="testimonial-text">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <h3>Bread Mc</h3>
+            <p class="position" style="color: #3574E0;">Founder</p>
+        </article>
+        
+        <!-- Tercer artículo del carrusel -->
+        <article class="slide" data-slideIndex="2">
+            <figure class="imgentest">
+                <img src="imagenes/testi3.jpeg" alt="Foto de Maria Fread">
+                <i class="fa-solid fa-quote-left icono-encima"></i>
+            </figure>
+            <div class="testimonial-text">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <h3>Maria Fread</h3>
+            <p class="position" style="color: #3574E0;">Web Developer</p>
+        </article>
+    </div>
+
+    <!-- Contenedor de botones -->
+    <div class="slide-buttons">
+        <a id="back-button" class="arrow back">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a id="forward-button" class="arrow forward">
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
+</section>
+
+
+<!-- acordeon -->
+<section class="acordeon">
+    <h1>NOTICES</h1>
+    <br>
+    <br>
+
+    <!-- Primer ítem del acordeón -->
+    <div class="acordeon_titulo ancho">
+        <h3>NOTICE 1</h3>
+        <i class="icono fa-solid fa-chevron-down"></i>
+    </div>
+    <article class="acordeon_contenido2 ancho">
+        <img src="imagenes/notice1.jpeg" alt="Notice image">
+        <div class="acordeon_info">
+            <p><strong>Webx</strong> | <span>July 26, 2020</span></p>
+        </div>
+        <h4>What a great idea to improve.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, et dolore.</p>
+    </article>
+
+    <!-- Segundo ítem del acordeón -->
+    <div class="acordeon_titulo ancho">
+        <h3>NOTICE 2</h3>
+        <i class="icono fa-solid fa-chevron-down"></i>
+    </div>
+    <article class="acordeon_contenido2 ancho">
+        <img src="imagenes/notice2.jpeg" alt="Notice image">
+        <div class="acordeon_info">
+            <p><strong>Webx</strong> | <span>August 10, 2020</span></p>
+        </div>
+        <h4>Innovative strategies for success.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, et dolore.</p>
+    </article>
+
+<script src="script.js"></script>
+
+<!-- footer -->
+
+<footer class="footer">
+    <img src="imagenes/logofooter.png" alt="Logo">
+</footer>
+
+<button class="fixed-button" href="#">
+    <i class="fa-solid fa-arrow-up"></i> 
+</button>
+
+<!-- script menu -->
+    <script>
+        $("#icon-menu").click(function () {
+            $("#ul-menu").toggleClass("active");
+        });
+    </script>
+    <script>
+        $(".close-a").click(function () {
+            $("#ul-menu").removeClass("active");
+        });
+    </script>
+
+<!-- script responsiveslide -->
+
+<script>
+    $(function() {
+      $(".rslides").responsiveSlides();
+    });
+  </script>
+
+  <!-- script wow -->
+
+  <script>
+    new WOW().init();
+</script>
+
+<!-- script fancybox -->
+
+<script>
+    Fancybox.bind("[data-fancybox]", {
+    });
+  </script>
+
+<!-- script acordeon -->
+<script>
+    $(".acordeon_titulo").click(function(){
+        var t = $(this);
+        var tp = t.next();
+        tp.slideToggle();
+    });
+</script>
+</body>
+</html>
